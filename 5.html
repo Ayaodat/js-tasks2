@@ -2,18 +2,27 @@
 <html>
 <body>
 <script> 
-    function namesOnly(arr) {
-  return arr.map(person => person.name);
+    function vowelCount(str) {
+  const vowels = "aeiou";
+  const result = {};
+
+  for (let char of str.toLowerCase()) {
+    if (vowels.includes(char)) {
+      result[char] = (result[char] || 0) + 1;
+    }
+  }
+
+  return result;
 }
 
 
-console.log(namesOnly([
-  { name: "Angelina Jolie", age: 80 },
-  { name: "Eric Jones", age: 2 },
-  { name: "Paris Hilton", age: 5 },
-  { name: "Kayne West", age: 16 },
-  { name: "Bob Ziroll", age: 100 }
-]));
+console.log(vowelCount('Elie'));
+console.log(vowelCount('Tim')); 
+console.log(vowelCount('Matt')); 
+console.log(vowelCount('hmmm')); 
+console.log(vowelCount('I Am awesome and so are you'));
 </script>  
 </body>
 </html>
+
+

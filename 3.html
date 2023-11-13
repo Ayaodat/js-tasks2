@@ -2,13 +2,16 @@
 <html>
 <body>
 <script> 
-
-function capitalizeNames(arr) {
-  return arr.map(name => name.charAt(0).toUpperCase() + name.slice(1).toLowerCase());
+    function showFirstAndLast(arr) {
+    return arr.map(str => str.length > 1 ? str[0] + str[str.length - 1] : str);
 }
 
 
-console.log(capitalizeNames(["aya", "ali", "lana", "ahmad"])); 
+const result1 = showFirstAndLast(['colt', 'matt', 'tim', 'udemy']);
+console.log("Test Case 1:", result1);  
+
+const result2 = showFirstAndLast(['hi', 'goodbye', 'smile']);
+console.log("Test Case 2:", result2);
 </script>  
 </body>
 </html>

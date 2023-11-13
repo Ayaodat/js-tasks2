@@ -2,12 +2,18 @@
 <html>
 <body>
 <script> 
-    function doubleNumbers(arr) {
-  return arr.map(num => num * 2);
+function doubleValues(arr) {
+    return arr.map(value => value * 2);
 }
 
 
-console.log(doubleNumbers([2, 5, 100]));
+const result1 = doubleValues([1, 2, 3]);
+console.log("Test Case 1:", result1);  
+
+
+const result2 = doubleValues([5, 1, 2, 3, 10]);
+console.log("Test Case 2:", result2); 
+
 </script>  
 </body>
 </html>

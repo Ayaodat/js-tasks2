@@ -2,12 +2,17 @@
 <html>
 <body>
 <script> 
-    function stringItUp(arr) {
-  return arr.map(num => num.toString());
+
+function onlyEvenValues(arr) {
+    return arr.filter(value => value % 2 === 0);
 }
 
 
-console.log(stringItUp([2, 5, 100]));
+const result1 = onlyEvenValues([1, 2, 3]);
+console.log("Test Case 1:", result1);
+
+const result2 = onlyEvenValues([5, 1, 2, 3, 10]);
+console.log("Test Case 2:", result2);
 </script>  
 </body>
 </html>

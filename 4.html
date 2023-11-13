@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
-<script> 
-
-function namesOnly(arr) {
-  return arr.map(person => person.name);
+<script>
+    
+    function addKeyAndValue(arr, key, value) {
+  for (let obj of arr) {
+    obj[key] = value;
+  }
+  return arr;
 }
 
 
-console.log(namesOnly([
-  { name: "Angelina Jolie", age: 80 },
-  { name: "Eric Jones", age: 2 },
-  { name: "Paris Hilton", age: 5 },
-  { name: "Kayne West", age: 16 },
-  { name: "Bob Ziroll", age: 100 }
-])); 
+const result = addKeyAndValue([{name: 'Elie'}, {name: 'Tim'}, {name: 'Matt'}, {name: 'Colt'}], 'title', 'instructor');
+console.log(result);
 </script>  
 </body>
 </html>
